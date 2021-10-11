@@ -9,3 +9,11 @@ console.log(months[10]);
 /*Ordenar el array de meses alfabéticamente y mostrarlo por consola (utilizar sort).*/
 
 console.log(months.sort());
+
+/*
+Agregar un elemento al principio y al final del array (utilizar unshift y push).
+*/
+
+months.push('Omega');
+months.unshift('Alpha');
+console.log(months);
