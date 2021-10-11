@@ -30,3 +30,11 @@ variable (utilizar substring, toUpperCase, toLowerCase y el operador +).
 
 var newStr3 = lowToUp , capLetter;
 console.log(capLetter = newStr3.substring(0,1).toUpperCase() + newStr3.substring(1,).toLowerCase());
+
+/*
+Crear una variable de tipo string con al menos 10 caracteres y algún espacio en blanco.
+ Encontrar la posición del primer espacio en blanco y guardarla en una variable (utilizar indexOf).
+*/
+
+var newStr4 = 'ricardo fort' , blkspc;
+console.log(blkspc = newStr4.indexOf(' '));
