@@ -32,3 +32,10 @@ Invertir el orden del array (utilizar reverse).
 
 months.reverse();
 console.log(months);
+
+/*
+Unir todos los elementos del array en un único string donde cada mes este separado por un guión - (utilizar join).
+*/
+
+var allTheMonths = months.join('-');
+console.log(allTheMonths);
