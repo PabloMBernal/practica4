@@ -25,3 +25,10 @@ Quitar un elemento del principio y del final del array (utilizar shift y pop).
 months.pop();
 months.shift();
 console.log(months);
+
+/*
+Invertir el orden del array (utilizar reverse).
+*/
+
+months.reverse();
+console.log(months);
