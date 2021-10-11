@@ -82,3 +82,25 @@ function addition2(val1 , val2){
 }
 
 console.log(addition2(5.8, -25));
+
+/*
+Convertir la validación del ejercicio 6b) en una función separada y llamarla dentro de la 
+función suma probando que todo siga funcionando igual.
+*/
+
+function validation(arg){
+    if(isNaN(arg)){
+        console.log('element ' + arg + ' is not a number');
+        return false;
+    }
+    return true;
+}
+
+function addition3(val1 , val2){
+    if (validation(val1) && validation(val2)){
+        return val1 + val2;
+    }
+    return NaN;
+}
+
+console.log(addition3(3,'a'));
