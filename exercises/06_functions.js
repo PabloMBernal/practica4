@@ -47,3 +47,38 @@ function validate_integer(val){
 
 var no = 5;
 console.log(validate_integer(no));
+
+/*
+A la función suma del ejercicio 6b) agregarle una llamada que valide que los números sean enteros. 
+En caso que haya decimales mostrar un alerta con el error y retorna el número convertido a entero (redondeado).
+*/
+
+function addition2(val1 , val2){
+    var add1, add2;
+    if (isNaN(val1) || isNaN(val2)){
+        if(isNaN(val1)){
+            console.log('the first element is not a number')
+        }
+        else{
+            console.log('the second element is not a number');
+        }
+        return NaN;
+    }
+    if(!validate_integer(val1)){
+        add1 = Number(val1.toFixed(0));
+        console.log('floating point number = '+ val1 +' approximating to nearest integer = ' + add1);
+    }
+    else{
+        add1 = val1;
+    }
+    if(!validate_integer(val2)){
+        add2 = Number(val2.toFixed(0));
+        console.log('floating point number = '+ val2 +' approximating to nearest integer = '+ add2);
+    }
+    else{
+        add2 = val2;
+    }
+    return add1 + add2;
+}
+
+console.log(addition2(5.8, -25));
