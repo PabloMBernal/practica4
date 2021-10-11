@@ -17,3 +17,11 @@ Agregar un elemento al principio y al final del array (utilizar unshift y push).
 months.push('Omega');
 months.unshift('Alpha');
 console.log(months);
+
+/*
+Quitar un elemento del principio y del final del array (utilizar shift y pop).
+*/
+
+months.pop();
+months.shift();
+console.log(months);
