@@ -32,3 +32,18 @@ function addition(val1 , val2){
 
 var numb1 = 1,  numb2 = 'd' , numb3;
 console.log(numb3 = addition(numb1, numb2));
+
+/*
+Crear una función validate integer que reciba un número como parámetro y devuelva verdadero si es un número entero.
+*/
+
+function validate_integer(val){
+    var noDecimal = val.toFixed(0);
+    if((val / noDecimal) !== 1){
+        return false;
+    }
+    return true;
+}
+
+var no = 5;
+console.log(validate_integer(no));
